@@ -28,7 +28,10 @@
                 <table>
                     <tr><th><?= $x['name'] ?></th></tr>
                     <tr><td><?= $x['msgEnv'] ?></td></tr>
-                    <tr><td><?= $x['data'] ?></td></tr>
+                    <tr><td><?php 
+                        $return = new \DateTime($x['data']);
+                        echo $return->format('d/m/Y H:i:s'); /*Alterando o formato da data*/
+                    ?></td></tr>
                 </table>
             </div>
         <?php }?>

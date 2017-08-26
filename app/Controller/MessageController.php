@@ -19,7 +19,7 @@ class MessageController
       $dataEnv = \date(YmdHis);
       $query = new QueryBuilder();
       $name = $_POST['name'];
-      $mensagem = $_POST['msg'];
+      $mensagem = nl2br(\htmlentities($_POST['msg'], ENT_QUOTES, 'UTF-8'));
       $dbInsert['name'] = $name;
       $dbInsert['msgEnv'] = $mensagem;
       $dbInsert['data'] = $dataEnv;
