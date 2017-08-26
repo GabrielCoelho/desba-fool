@@ -1,15 +1,89 @@
 *{margin: 0; padding: 0;}
 body{
-    background-color: bisque;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
+ background-color: #3e40a3; 
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-weight: bold;    
+ color: #FFF;
+ font-size: 1em;
+}
+header{
+    background-color: #332c83;
+}
+nav {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+nav li {
+    display: inline;
+    margin-right: 15px;
 }
 
-.container{
-    width: 100%;
+nav li a{
+    text-decoration: none;
+    color: #E5EBF9;
+}
+
+nav li a:hover{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bolder;
+    border: rgba(88, 90, 180, 0.58) 1.2px solid;
+    border-radius: 5px;
+}
+
+section.container{
+    border: #FFF 1.2px solid;
+    border-radius: 20px;
+}
+
+section.container input{
+    background-color: rgba(62, 64, 163, 0.56);
+    color: #FFF;
+    border: rgba(88, 90, 180, 0.58) 1.2px solid;
+    border-radius: 5px;
+}
+
+section.container textarea{
+    background-color: rgba(62, 64, 163, 0.56);
+    color: #FFF;
+    border: rgba(88, 90, 180, 0.58) 2px solid;
+    border-radius: 5px;
+}
+
+.divisor{
+    margin-top: 20px;
+}
+
+.divisor h2{
+    font-size: 2.2em;
+    text-underline-position: above;
+    text-decoration: wavy;
+}
+
+#mensagem{
+    border:none;
+}
+
+#mensagem .col-xl-2.col-lg-3.col-md-6.col-sm-12{
+    border: #FFF 1px solid;
+    border-radius: 20px;
+}
+
+#mensagem table th{
+    font-size: 0.8em;
+    text-shadow: #3e40a3 1px;
+    text-align: center;
+    font-style: italic;
+}
+
+#mensagem table td.msg{
+    text-align: justify;
+    font-size: 1.5em;
     
 }
-
-.container form{
-    margin: 0 auto;
+#mensagem table td.data{
+    text-align: right;
+    font-size: 0.95em;
 }
