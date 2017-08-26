@@ -7,4 +7,4 @@ Deve-se lembrar que, para iniciar os testes do projeto, deve-se executar uma sé
 - Iniciar o MySQL e importar as configurações do arquivo `desabafull.sql`
 - Executar `php -S localhost:600` para conseguir vizualizar o projeto. 
 
-
+###### Nota: Recomendamos o uso da porta 600 para não gerar conflito com algum outro aplicativo
